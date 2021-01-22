@@ -1,0 +1,570 @@
+.remaining
+{
+    border-top: 1px solid #B4BED7;
+    border-bottom: 1px solid #B4BED7;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.remaining .nextBtn
+{
+    background: #2B074D;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 30px;
+}
+
+.bold
+{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #595959;
+}
+
+.card2
+{
+    background: #F6F6F6;
+    display: flex;
+    padding:20px;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.card2Desc
+{
+   padding-left: 15px;
+}
+
+.card2Desc select
+{
+    padding: 10px;
+    border: 1px solid #B4BED7;
+    border-radius: 8px;
+}
+
+.pkg
+{
+    background: #8015E8;
+    padding: 8px 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.col1Body p
+{
+    font-size: 15px;
+    color: #595959;
+}
+
+.btn
+{
+    width: 95%;
+}
+
+.category svg
+{
+    width: 50px;
+    height: 30px;
+}
+
+.catP
+{
+    margin-top: 15px;
+    color: #222;
+}
+
+/* CATEGORY CSS */
+.category
+{
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    color: #595959 !important;
+}
+.heading
+{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.heading h2
+{
+    margin-left: 15px;
+}
+.categoryContent
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.categoryContent > div
+{
+    margin-top: 20px;
+}
+
+.sideNav
+{
+    width: 30%;
+    margin-top: 40px !important;
+}
+
+.sideNav .nav-link
+{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sideNav a
+{
+    color: #2F2F2F;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 13px;
+    
+}
+
+.navActive
+{
+    background: #F4F6F9;
+    border: 3px solid #B4BED7;
+    border-right: none;
+    border-radius: 8px 0px 0px 8px;
+    padding: 10px 5px;
+    margin-top: 0px !important;
+    position: relative;
+    left: 9px;
+    display: block;
+    width: 100%;
+}
+
+.allCat
+{
+    background: #F4F6F9;
+    border: 3px solid #B4BED7;
+    width: 69%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.allCat > div
+{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.toggle
+{
+    margin-top: 5px;
+}
+
+.mt-5
+{
+    margin-top: 20px;
+}
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+.toggle{
+    --uiToggleSize: var(--toggleSize, 1.1rem);
+    --uiToggleBorderWidth: var(--toggleBorderWidth, 1px);
+    --uiToggleColor: var(--toggleColor, #2B074D);
+  
+    display: var(--toggleDisplay, inline-flex);
+    position: relative;
+  }
+  
+  .toggle__input{
+    /*
+    The pattern by Sara Soueidan https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
+    */
+    width: var(--uiToggleSize);
+    height: var(--uiToggleSize);
+    opacity: 0;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  
+  /*
+  1. Calculation of the gap for the custom checkbox
+  */
+  
+  .toggle__label{
+    display: inline-flex;
+    min-height: var(--uiToggleSize);
+    padding-left: calc(var(--uiToggleSize) + var(--toggleIndent, .4em));
+  }
+  
+  .toggle__input:not(:disabled) ~ .toggle__label{
+    cursor: pointer;
+  }
+  
+  /*
+  1. Ems helps to calculate size of the checkbox
+  */
+  
+  .toggle__label::after{
+    content: "";
+    box-sizing: border-box;  
+    width: 1em;
+    height: 1em;
+    font-size: var(--uiToggleSize); /* 1 */
+  
+    background-color: transparent;
+    border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+  
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .toggle__input:checked ~ .toggle__label::after{
+    background-color: var(--uiToggleColor);
+  }
+  
+  .toggle__text{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  /*
+  The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+  
+  1. Ems helps to calculate size and position of the arrow
+  */
+  
+  .toggle__label::before{
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: var(--uiToggleSize); /* 1 */
+  
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: var(--toggleArrowColor, #fff);
+  
+    position: absolute;
+    top: .5428em;
+    left: 2px;
+    z-index: 3;
+  
+    transform-origin: left top;
+    transform: rotate(-40deg) skew(10deg);
+  }
+  
+  .toggle__input:checked ~ .toggle__label::before{
+    --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+  
+    width: .5em;
+    height: .2em;
+    border-left-width: var(--uiToggleArrowWidth);
+    border-bottom-width: var(--uiToggleArrowWidth);
+  }
+  
+  
+  /* 
+  The demo skin
+  */
+  
+  .toggle__label::after{
+    border-radius: var(--toggleBorderRadius, 2px);
+  }
+  
+  /* 
+  The animation of switching states
+  */
+  
+  .toggle__input:not(:disabled) ~ .toggle__label::before{
+    will-change: width, height;
+    opacity: 0;
+  }
+  
+  .toggle__input:not(:disabled):checked ~ .toggle__label::before{
+    opacity: 1;
+    transition: opacity .1s ease-out .25s, width .1s ease-out .5s, height .2s ease-out .3s;
+  }
+  
+  .toggle__input:not(:disabled) ~ .toggle__label::after{
+    will-change: background-color;
+    transition: background-color .2s ease-out;
+  }
+  
+  /*
+  =====
+  SETTINGS
+  =====
+  */
+  
+  .page__custom-settings{
+    --toggleColor: #690e90;
+    --toggleOutlineColorFocus: #690e90;
+    --toggleSize: 2rem;
+  }
+  
+  
+  /*
+  =====
+  DEMO
+  =====
+  */
+  
+  body{
+    min-height: 100vh;
+    margin: 0;    
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif; 
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page{
+    box-sizing: border-box;
+    max-width: 45rem;
+    padding: 2.75rem 2rem 2.5rem;
+    margin: auto;
+    
+    background-color: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+    border-radius: 2px;
+  }
+  
+  .page__section{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+  }
+  
+  .page__section:nth-child(n+2){
+    margin-top: 3rem;
+  }
+  
+  .page__custom-settings{
+     --pageToggleTextFontSize: 1.25rem;
+  }
+  
+  .page__name{
+    width: 100%;
+  }
+  
+  .page__name::first-letter{
+    text-transform: uppercase;
+  }
+  
+  .page__toggle{
+    margin-top: 1.25rem;
+    margin-right: 1.5rem;
+    font-size: var(--pageToggleTextFontSize);
+  }
+
+  @media only screen and (max-width:700px)
+  {
+      .categoryContent > div
+      {
+          width: 100% !important;
+      }
+      .allCat > div
+      {
+          width: 100%;
+      }
+      .allCat
+      {
+          padding: 20px;
+      }
+      th
+      {
+          min-width: 100px !important;
+      }
+      .navActive
+      {
+        position: unset !important;
+        border: 1px solid #B4BED7;
+        margin-right: 20px;
+        border-radius: 8px !important;
+        background: #F4F6F9 !important;
+      }
+      .btn
+      {
+        padding-right: 20px !important;
+      }
+  }
+
+  .toggle
+  {
+      width: fit-content !important;
+  }
+
+  .categoryContent label
+  {
+    font-size: 13px;
+    margin-left: 5px;
+    display: block;
+  }
+
+  .profit
+  {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+
+
+  .tableDiv
+  {
+      width: 100%;
+      border: 2px solid #B4BED7;
+      border-radius: 10px !important;
+  }
+  
+  table {
+      width: 100%;
+      padding: 15px 8px;
+  }
+  
+  tr
+  {
+      display: flex;
+  }
+    
+  thead,
+  tbody
+  {
+      width: 100%;
+      display: block;
+  }
+  
+  th, td {
+      text-align: left;
+      padding: 8px;
+      width: 20% !important;
+      display: block;
+      min-width: 130px !important;
+  }
+  
+  .border1,
+  .border2
+  {
+      background: #DEF4FF !important;
+      width: 100%;
+  
+      padding:15px 20px;
+  }
+  
+  .border1
+  {
+      border-radius: 10px 10px 0px 0px;
+  }
+  
+  .border2
+  {
+      border-radius: 0px 0px 10px 10px;
+  }
+  
+  .cata
+  {
+      font-weight: bold;
+  }
+  
+  .edit
+  {
+      display: flex;
+      align-items: center;
+  }
+  
+  .borderRow
+  {
+      background: #DEF4FF !important;
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 10px;
+      padding:15px 20px;
+  
+  }
+  
+  .product
+  {
+      padding: 20px;
+  }
+  
+  .product .bold
+  {
+      margin-bottom: 10px;
+  }
+  
+  .edit a
+  {
+    margin-left: 10px;
+  }
+
+  .remainingContent
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .remainingContent .button
+  {
+    background: #2B074D;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 10px;
+  }
+
+  .remainingContent p
+  {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .table_on-staep_3 label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1px solid #363636;
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); */
+    padding: 0px;
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+}

@@ -1,0 +1,64 @@
+.sec-pricing{
+    padding: 70px 0;
+}
+
+
+.sec-pricing .section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+@media screen and (max-width: 991px){
+    .sec-pricing .section-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.sec-pricing .left{
+    background: url("../images/pricing2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sec-pricing .price{
+    color: #652c8a;
+    font-size: 52px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.sec-pricing .price span{
+    font-size: 24px;
+}
+
+.sec-pricing .list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.sec-pricing .list svg{
+    width: 12px;
+    height: 11px;
+    fill: #652c8a;
+    margin-right: 20px;
+}
+
+.sec-pricing .list span{
+    color: #595959;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sec-pricing .msg{
+    color: #172b43;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.sec-pricing .banks{
+    border-top: 1px solid #E3E7F0;
+    border-bottom: 1px solid #E3E7F0;
+}

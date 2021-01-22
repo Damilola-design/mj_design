@@ -1,0 +1,298 @@
+.banner
+{
+    background: url('../images/banner.jpg');
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+nav
+{
+    background: unset;
+}
+
+.bannerCap
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    color: #fff;
+}
+
+.bannerCap h2
+{
+    font-size: 40px;
+}
+
+.bannerCap p
+{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.dashContent
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    margin-bottom: 100px;
+}
+
+.dashContent aside
+{
+    background: #fff;
+    border: 1px solid #B4BED7;
+    width: 28%;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 450px;
+    max-height: 450px;
+}
+
+.menuLinks
+{
+    padding: 20px;
+}
+
+.navHead,
+.orderHeading
+{
+    background: #2B074D;
+    color: #fff;
+    padding-left:15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.bold
+{
+    font-weight: 700;
+}
+
+.nav-link
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-link img
+{
+    margin-right: 10px;
+}
+
+.nav-link a
+{
+    color: #595959;
+    font-size: 16px;
+}
+
+.dashContent .orderContent
+{
+    width: 70%;
+    background: #fff;
+    border: 1px solid #B4BED7;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 420px;
+    min-height: 420px;
+}
+
+.orderHeading p
+{
+    margin-left: 10px;
+}
+
+/* table css */
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead th
+{
+    border-bottom: 1px solid #B4BED7;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tbody td
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #B4BED7;
+}
+
+@media only screen and (max-width:700px)
+{
+    
+    .dashContent .orderContent,
+    .dashContent aside
+    {
+        width: 100%;
+    }
+
+    .dashContent .orderContent
+    {
+        margin-top: 30px;
+    }
+}
+
+/* account page css */
+.accountContent > div
+{
+    padding: 20px;
+    border-top: 1px solid #B4BED7;
+}
+
+.accountContent .name,
+.accountContent .location
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accountContent .name > div,
+.accountContent .location > div
+{
+    min-width: 200px;
+}
+
+.middle
+{
+    margin: 8px 0px;
+    font-size: 16px;
+}
+
+.accountContent a
+{
+    color: #222;
+}
+
+/* edit setting css */
+.editSetting
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 50px;
+}
+.Editaccount .accountContent .name,
+.Editaccount .accountContent .location,
+.Editaccount .accountContent .mob
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Editaccount .accountContent .name > div,
+.Editaccount .accountContent .location > div,
+.Editaccount .accountContent .mob > div
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 180px;
+    justify-content: center;
+    width: 200px;
+}
+
+.Editaccount .accountContent label
+{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Editaccount .accountContent input
+{
+    padding: 10px;
+    border: 1px solid #B4BED7;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.Editaccount .accountContent button
+{
+    width: fit-content;
+    padding: 12px 40px;
+}
+
+.mob .input1
+{
+    width: 300px !important;
+}
+
+@media only screen and (max-width:550px)
+{
+    .Editaccount .accountContent .name > div,
+    .Editaccount .accountContent .location > div,
+    .Editaccount .accountContent .mob > div
+    {
+        width: 100% !important;
+    }
+}
+
+/* :horizontal nav */
+.h_nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #B4BED7;
+    width: fit-content;
+    margin: 0px auto;
+    padding: 15px 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+.h_nav .hn_link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 20px;
+    height: 100%;
+}
+
+.h_nav .hn_link a
+{
+    color: #000;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+#h_act
+{
+    font-weight: bold;
+}
+
+@media only screen and (max-width:750px)
+{
+    .h_nav
+    {
+        bottom: 15px;
+        width: 90%;
+    }
+
+    .hn_link
+    {
+        margin-top: 10px !important;
+    }
+}

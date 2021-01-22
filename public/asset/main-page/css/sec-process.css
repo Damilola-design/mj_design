@@ -1,0 +1,59 @@
+.sec-process{
+    background-image: url("../images/sec-process/process.webp");
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-process .process-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .sec-process .process-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .sec-process .process-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.sec-process .box{
+    position: relative;
+}
+
+.sec-process .img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 146px;
+    height: 146px;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+}
+
+.sec-process .img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96px;
+    height: 100px;
+}
+
+.sec-process svg{
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    fill: #ffffff;
+    right: 0;
+    top: 75px;
+    transform: rotate(90deg);
+}

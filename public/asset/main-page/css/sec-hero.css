@@ -1,0 +1,39 @@
+.sec-hero{
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 70px 0;
+}
+
+.sec-hero .hero-left{
+    background : url("../images/hero-left.webp") no-repeat top left;
+    position: absolute;
+    right: auto;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sec-hero .section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .sec-hero .section-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.sec-hero .section-container .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
